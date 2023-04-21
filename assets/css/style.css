@@ -1,0 +1,68 @@
+/* CSS for header section*/
+header {
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #FF69B4;
+    color: white; 
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+    color: #ffffff;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+
+header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+header div ul {
+    list-style-type: none;
+}
+
+header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+}
+
+header ul li a::after {
+    content: '\205E';
+    display: inline-block;
+    margin-left: 3px;
+  }
+
+/* top image */
+#photo {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url (".assets/images/updated-photo.png");
+    background-size: cover;
+    background-position: center;
+}
+/* body */
+h2 {
+    display: inline-block;
+    font-size: 30px;
+    color: #FF69B4;
+    margin-left: 75%;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+/* code for footer */
+footer {
+    padding: 30px;
+    clear: both;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
