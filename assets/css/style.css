@@ -51,7 +51,9 @@ header ul li a::after {
 }
 
 #photo h2 {
-    padding-top: 200px;
+    padding-top: 225px;
+    padding-right: 30px;
+    float: right;
     text-align: right;
     display: inline-block;
     font-size: 30px;
@@ -74,23 +76,37 @@ h2 {
     flex-direction: row;
 }
 
+    /* text over images */
+/* .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: medium;
+    color: white;
+  } */
+
+  /* left side */
 .label {
     display: flex;
     padding-left: 20px;
-    /* padding-right: 5%;
-    border-right: solid #FF69B4 2px; */
 }
+
+    /* right side */
 
     /* about me info */
 .am-info {
-    display: block;
+    display: inline-block;
 }
 
     /* Horiseon project section */
 #img1 {
-    height: 200px;
+    border: solid 2px #046307;
+    height: 400px;
 }
 
+#img1:hover {
+    border-color:#FF69B4;
+}
     /* placeholder project section */
 h3 {
     display: inline-block;
@@ -100,17 +116,32 @@ h3 {
 }
 
 .placeholder-images {
-    height: 100px;
+    display: flex;
+    height: 200px;
+    border: solid 2px #046307;
+    flex: 0 0 200px;
+
+}
+
+.placeholder-images:hover {
+    border-color: #FF69B4;
 }
 
     /* email */
-/* .email p li {
+
+.email::before {
+        content: "📧";
+        display: inline-block;
+        margin-left: 3px;
+}
+
+#hidden {
     display: none;
 }
-.email p li:hover {
+.email:hover #hidden {
     display: block;
     list-style-type: none;
-} */
+}
 
 /* code for footer */
 footer {
