@@ -1,4 +1,7 @@
 /* CSS for header section*/
+body {
+    background-color: #ffe6f7;
+}
 header {
     padding: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -32,10 +35,12 @@ header div ul li {
 header a {
     color: #ffffff;
     text-align: end;
+    font-size: 25px;
+    text-decoration: none;
 }
 
 header ul li a::after {
-    content: '\205E';
+    content: '✨';
     display: inline-block;
     margin-left: 3px;
   }
@@ -64,6 +69,11 @@ header ul li a::after {
 }
 
 /* body */
+main {
+    width: 88%;
+    margin: 0 auto;
+}
+
 h2 {
     display: inline-block;
     font-size: 30px;
@@ -74,73 +84,110 @@ h2 {
 .container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-bottom: 30px;
 }
 
-    /* text over images */
-/* .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    font-size: medium;
-    color: white;
-  } */
-
-  /* left side */
-.label {
-    display: flex;
-    padding-left: 20px;
+.container > h2 {
+    flex-basis: 15%;
+    text-align: end;
+    border-right: 3px solid #FF69B4;
+    padding-right: 30px;
+    font-size: 30px;
 }
 
-    /* right side */
+   /* right side */
+.container > div {
+    flex-basis: 85%;
+    padding-left: 30px;
+}
 
     /* about me info */
 .am-info {
     display: inline-block;
+    font-size: 20px;
+
 }
 
-    /* Horiseon project section */
-#img1 {
-    border: solid 2px #046307;
-    height: 400px;
+    /* project/work section */
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#img1:hover {
-    border-color:#FF69B4;
+.horiseon {
+    background-image: url("../images/horiseon-crop.png");
+    background-size: cover;
 }
-    /* placeholder project section */
-h3 {
+
+.project-2 {
+    background-image: url("../images/placeholder-img-1.jpeg");
+    background-size: contain;
+}
+
+.project-3 {
+    background-image: url("../images/placeholder-img-2.jpeg");
+    background-size: contain;
+}
+
+.project-4 {
+    background-image: url("../images/placeholder-img-3.png");
+    background-size: contain;
+}
+
+.project-5 {
+    background-image: url("../images/placeholder-img-4.jpeg");
+    background-size: contain;
+}
+
+.project {
+    border: solid 5px #046307;
+    min-height: 180px;
+    max-height: 180px;
+    margin: 0.5em;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.project:hover {
+    border: solid 5px #FF69B4;
+}
+
+.project div{
+    padding: 8px 10px;
+    background-color: #046307;
+    color: #ffffff;
+}
+
+.project:first-child {
+    min-height: 320px;
+    flex-basis: 100%;
+}
+    /* contact me section */
+
+#contact {
     display: inline-block;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50 px;
     color: #FF69B4;
 }
 
-.placeholder-images {
-    display: flex;
-    height: 200px;
-    border: solid 2px #046307;
-    flex: 0 0 200px;
-
+#contact > a {
+    text-decoration: none;
+    color: #FF69B4;
 }
 
-.placeholder-images:hover {
-    border-color: #FF69B4;
-}
-
-    /* email */
-
-.email::before {
+#email::before {
         content: "📧";
         display: inline-block;
-        margin-left: 3px;
-}
-
-#hidden {
-    display: none;
-}
-.email:hover #hidden {
-    display: block;
-    list-style-type: none;
+        margin-right: 3px;
 }
 
 /* code for footer */
@@ -165,5 +212,8 @@ footer {
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
     }
   }
