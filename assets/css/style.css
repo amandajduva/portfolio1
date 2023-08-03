@@ -122,9 +122,9 @@ h2 {
     background-size: cover;
 }
 
-.project-2 {
-    background-image: url("../images/placeholder-img-1.jpeg");
-    background-size: contain;
+.minigames {
+    background-image: url("../images/minigames-screenshot\ copy.png");
+    background-size: cover;
 }
 
 .project-3 {
