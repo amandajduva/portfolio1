@@ -8,7 +8,7 @@ A portfolio of my deployed web applications using HTML and CSS.
 
 To use this project, you can review the html and css files. To test your own suggestions on what to adjust in the html or css, open the Chrome DevTools by pressing Command+Option+I (macOS) or Control+Shift+I (Windows). Try any changes in the console panel and see then update in real time. 
 
-Link to the [deployed application](https://amandajduva.github.io/portfolio/). 
+Link to the [deployed application](https://amandajduva.github.io/portfolio1/). 
 
 Screenshot of deployed application:
 ![deployed application](assets/images/portfolio-screenshot.png)
